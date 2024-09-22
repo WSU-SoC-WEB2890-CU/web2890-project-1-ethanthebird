@@ -1,6 +1,5 @@
 const path = require("path")
 const glob = require("glob")
-
 import { defineConfig } from "vite"
 import eslint from "@rollup/plugin-eslint"
 
@@ -23,6 +22,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input,
+      external: ["stylesheets/main.scss"], // Mark main.scss as external
     },
   },
   server: {
