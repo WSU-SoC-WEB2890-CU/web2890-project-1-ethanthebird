@@ -22,12 +22,19 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input,
-      external: ["stylesheets/main.scss"], // Mark main.scss as external
+      // Remove the external SCSS reference here
     },
   },
   server: {
     port: 8080,
     open: "/",
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // Process SCSS without any additional import config
+      },
+    },
   },
   plugins: [
     {
