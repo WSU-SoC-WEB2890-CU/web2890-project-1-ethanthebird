@@ -1,0 +1,41 @@
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 3rem 0;
+
+  .footer-logo {
+    max-width: 100px;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  address {
+    font-style: normal;
+    color: #bbb;
+  }
+
+  .list-inline-item {
+    margin: 0 10px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+}

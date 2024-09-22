@@ -1,0 +1,52 @@
+.cars-for-sale {
+  .card {
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      max-height: 400px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-body {
+      padding: 15px;
+
+      h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+        color: #555;
+      }
+
+      .text-primary {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #007bff;
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cars-for-sale .card {
+    margin: 15px;
+  }
+}
