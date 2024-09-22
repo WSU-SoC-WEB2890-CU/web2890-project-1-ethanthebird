@@ -1,10 +1,6 @@
-// Import Bootstrap SCSS (correct path from node_modules)
-@import "bootstrap/scss/bootstrap";
-
-// Import custom variables
+@import "bootstrap.scss";
 @import "variables";
-
-// Import components
+@import "bootstrap";
 @import "components/advantages";
 @import "components/header";
 @import "components/how-it-works";

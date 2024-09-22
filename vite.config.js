@@ -1,5 +1,6 @@
 const path = require("path")
 const glob = require("glob")
+
 import { defineConfig } from "vite"
 import eslint from "@rollup/plugin-eslint"
 
@@ -27,11 +28,6 @@ export default defineConfig({
   server: {
     port: 8080,
     open: "/",
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {},
-    },
   },
   plugins: [
     {
