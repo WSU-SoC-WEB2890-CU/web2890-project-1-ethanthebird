@@ -22,7 +22,6 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input,
-      // Remove the external SCSS reference here
     },
   },
   server: {
@@ -31,9 +30,7 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
-      scss: {
-        // Process SCSS without any additional import config
-      },
+      scss: {},
     },
   },
   plugins: [
